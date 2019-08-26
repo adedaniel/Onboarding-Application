@@ -1,0 +1,65 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    font-size: 14px;
+    width: 100%;
+    background: mintcream;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    /* margin-top: -3px; */
+}
+
+@media(min-width: 1024px) {
+    .container {
+        padding: 0 30vh !important;
+    }
+}
+
+@media(max-width: 1023px) {}
+
+.hov:hover {
+    transition: 0.5s;
+    /* background-color: navy; */
+}
+
+.clicked {
+    background-color: black
+}
+
+.stuff {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px
+}
+
+.input {
+    outline: 0;
+    width: 440px;
+    height: 30px;
+    text-align: center;
+    border-width: 0 0 2px;
+    border-color: black
+}
+
+.input:focus {
+    border-color: #2f2525
+}
+
+.col-md-3 {
+    margin-bottom: 30px
+}
+
+.butt {
+    margin-top: 30px;
+    width: 350px;
+    height: 50px;
+}
+
+.but {
+    margin-top: 30px;
+    width: 350px;
+    height: 50px;
+}
