@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import $ from "jquery";
+import { Redirect } from "react-router-dom";
 
 export class Intro extends Component {
   componentDidMount() {
@@ -37,10 +38,17 @@ export class Intro extends Component {
       return window.localStorage.getItem("username");
     }
   };
+  renderRedirect = () => {
+    if (this.props.sta === "") {
+      return <Redirect to="/" />;
+    }
+  };
 
   render() {
     return (
       <React.Fragment>
+        <div>{this.renderRedirect()}</div>
+
         <div className="container">
           <h6>
             "Hey, {this.userfunc()}, You're just minutes away from setting up
